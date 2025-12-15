@@ -60,11 +60,11 @@ export default function YourCards({ isAuthenticated, apiUrl }: YourCardsProps) {
     return '•'.repeat(cvv.length);
   };
 
-  // ✅ Context এ isAuthenticated পাঠিয়ে দিচ্ছি
+  // We are sending `isAuthenticated` in the context.
   useEffect(() => {
     const loadCards = async () => {
       setLoading(true);
-      await fetchCards(apiUrl, isAuthenticated); // 👈 isAuthenticated পাঠানো হচ্ছে
+      await fetchCards(apiUrl, isAuthenticated); // isAuthenticated is being sent.
       setLoading(false);
     };
 

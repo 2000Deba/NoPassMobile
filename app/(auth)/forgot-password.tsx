@@ -154,7 +154,7 @@ export default function ForgotPassword() {
             contentContainerStyle={styles.scrollContent}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
-            automaticallyAdjustKeyboardInsets={true}  // 👈 key line for Android+iOS
+            automaticallyAdjustKeyboardInsets={true}  // key line for Android+iOS
             keyboardDismissMode="on-drag" // If the user scrolls, the keyboard will be hidden.
           >
             <Ionicons

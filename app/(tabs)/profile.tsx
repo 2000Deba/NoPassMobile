@@ -30,7 +30,7 @@ export default function ProfileScreen() {
   const isDark = theme === "dark";
   const router = useRouter();
 
-  // Context থেকে refreshKey নিচ্ছি
+  // Getting the refreshKey from the Context.
   const { refreshKey: cardRefreshKey } = useCards();
   const { refreshKey: passwordRefreshKey } = usePasswords();
 
@@ -118,7 +118,7 @@ export default function ProfileScreen() {
     return () => {
       mounted = false;
     };
-  }, [token, cardRefreshKey, passwordRefreshKey]); // refreshKey dependencies যোগ করা হয়েছে
+  }, [token, cardRefreshKey, passwordRefreshKey]); // refreshKey dependencies have been added.
 
   return (
     <ScrollView

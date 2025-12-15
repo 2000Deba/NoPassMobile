@@ -18,11 +18,16 @@
       "icon": "./assets/icon.png"
     },
     "android": {
+      "package": "com.nopass.mobile",
+      "versionCode": 1,
       "icon": "./assets/icon.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
       "output": "static",

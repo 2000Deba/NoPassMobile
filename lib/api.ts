@@ -11,7 +11,7 @@ function showToast(msg: string) {
   else Alert.alert("Error", msg);
 }
 
-// ✅ Add optional customHeaders parameter
+// Add optional customHeaders parameter
 async function request(
   method: string, 
   path: string, 
@@ -24,7 +24,7 @@ async function request(
     "Content-Type": "application/json",
   };
 
-  // ✅ If custom headers provided (like for validation), use them first
+  // If custom headers provided (like for validation), use them first
   if (customHeaders?.Authorization) {
     headers.Authorization = customHeaders.Authorization;
   } else if (token) {
@@ -32,7 +32,7 @@ async function request(
     headers.Authorization = `Bearer ${token}`;
   }
 
-  // ✅ Merge any other custom headers
+  // Merge any other custom headers
   if (customHeaders) {
     Object.assign(headers, customHeaders);
   }
@@ -58,7 +58,7 @@ async function request(
       json = { raw: text };
     }
 
-    // 🔥 Handle 401 => Auto logout
+    // Handle 401 => Auto logout
     if (res.status === 401) {
       await SecureStore.deleteItemAsync("token");
       showToast("Session expired. Please login again.");

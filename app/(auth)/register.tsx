@@ -82,7 +82,7 @@ export default function Register() {
           scrollViewRef.current as any,
           (x, y) => {
             scrollViewRef.current?.scrollTo({
-              y: Math.max(0, y - 120), // negative scroll prevent করার জন্য
+              y: Math.max(0, y - 120), // To prevent negative scrolling.
               animated: true,
             });
           },

@@ -46,11 +46,11 @@ export default function YourPasswords({
     });
   };
 
-  // ✅ Context এ isAuthenticated পাঠিয়ে দিচ্ছি
+  // We are sending `isAuthenticated` in the context.
   useEffect(() => {
     const loadPasswords = async () => {
       setLoading(true);
-      await fetchPasswords(apiUrl, isAuthenticated); // 👈 isAuthenticated পাঠানো হচ্ছে
+      await fetchPasswords(apiUrl, isAuthenticated); // isAuthenticated is being sent.
       setLoading(false);
     };
 

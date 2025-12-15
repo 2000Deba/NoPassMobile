@@ -40,7 +40,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
   const [isPasswordEditMode, setIsPasswordEditMode] = useState(false);
   const [hiddenId, setHiddenId] = useState<string | null>(null);
 
-  // 🆕 Refresh trigger state
+  // Refresh trigger state
   const [refreshKey, setRefreshKey] = useState(0);
   const lastUsedApiUrlRef = useRef<string | null>(null);
   const lastAuthStateRef = useRef<boolean>(false);
@@ -53,7 +53,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  // 🎭 Demo Data for unauthenticated users
+  // Demo Data for unauthenticated users
   const DEMO_PASSWORDS: StoredPassword[] = [
     {
       _id: 'demo',
@@ -71,7 +71,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
     },
   ];
 
-  // 🔹 Main Fetch Function
+  // Main Fetch Function
   const fetchPasswords = async (apiUrl: string, isAuthenticated: boolean = true) => {
     if (!isAuthenticated) {
       setPasswords(DEMO_PASSWORDS);
@@ -95,7 +95,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
 
       const data = await res.json();
       if (res.ok) {
-        // 📊 Sort by createdAt (newest first)
+        // Sort by createdAt (newest first)
         const sortedPasswords = [...(data.passwords || data.data || [])]
           .sort((a, b) =>
             new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
@@ -110,7 +110,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  // 🔹 Trigger Refresh -> Auto Fetch
+  // Trigger Refresh -> Auto Fetch
   useEffect(() => {
     if (lastUsedApiUrlRef.current) {
       fetchPasswords(lastUsedApiUrlRef.current, lastAuthStateRef.current);
@@ -138,14 +138,14 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
     triggerRefresh();
   };
 
-  // 🗑️ Global delete function added here
+  // Global delete function added here
   const deletePassword = async (id: string, apiUrl: string): Promise<boolean> => {
     try {
       const token = await SecureStore.getItemAsync("token");
       if (!token) {
         showToast("error", "You must be logged in to delete a password");
         return false;
-      } // 👈 extra safety return
+      } // extra safety return
 
       const res = await fetch(`${apiUrl}?id=${id}`, {
         method: "DELETE",
@@ -163,7 +163,7 @@ export const PasswordsProvider = ({ children }: { children: ReactNode }) => {
 
       triggerRefresh();
       showToast("success", "Password deleted successfully");
-      return true; // 👈 success return
+      return true; // success return
 
     } catch (error) {
       console.error("Delete Error:", error);

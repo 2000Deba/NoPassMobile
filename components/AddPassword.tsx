@@ -29,7 +29,7 @@ interface AddPasswordProps {
   onEditCancel?: () => void;
   isAuthenticated: boolean;
   apiUrl: string;
-  scrollViewRef?: React.RefObject<ScrollView | null>; // 👈 New prop
+  scrollViewRef?: React.RefObject<ScrollView | null>;
   sectionRef: React.RefObject<View | null>;
 }
 
@@ -121,7 +121,7 @@ export default function AddPassword({
 
   // Helper function to scroll to and focus first error field
   const scrollToFirstError = (newErrors: typeof errors) => {
-    if (!scrollViewRef?.current) return; // ⭐ Guard clause
+    if (!scrollViewRef?.current) return; // Guard clause
     const errorFields = [
       { name: 'website', ref: websiteRef, viewRef: websiteViewRef },
       { name: 'username', ref: emailRef, viewRef: emailViewRef },
@@ -205,7 +205,7 @@ export default function AddPassword({
         website,
         username,
         password,
-        ownerEmail, // ⭐ must include
+        ownerEmail, // must include
         ...(isEditMode && { id: editData!._id }),
       };
 

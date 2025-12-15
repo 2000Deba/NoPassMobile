@@ -1,0 +1,12 @@
+{
+    "build": {
+        "production": {
+            "android": {
+                "buildType": "apk"
+            },
+            "env": {
+                "EXPO_PUBLIC_BACKEND_URL": "https://nopass-deba.vercel.app"
+            }
+        }
+    }
+}
