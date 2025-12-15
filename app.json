@@ -50,7 +50,12 @@
       "reactCompiler": true
     },
     "extra": {
-      "backendUrl": "https://nopass-deba.vercel.app"
-    }
+      "backendUrl": "https://nopass-deba.vercel.app",
+      "router": {},
+      "eas": {
+        "projectId": "787c3ae3-9bc4-4551-b057-3adc45de0ab9"
+      }
+    },
+    "owner": "2000deba"
   }
 }
