@@ -235,21 +235,21 @@ export default function AddCard({
 
     setLoading(true);
     try {
-      const ownerEmail = await SecureStore.getItemAsync("email");
-      if (!ownerEmail) throw new Error("Missing email");
-
       const body = {
         cardholderName,
         cardNumber: formatCardNumber(cardNumber),
         expiryDate,
         cvv,
-        ownerEmail, // must include
         ...(isEditMode && { id: editData!._id }),
       };
 
       const res = isEditMode
         ? await api.put("/mobile-cards", body)
         : await api.post("/mobile-cards", body);
+
+      if (!res?.success) {
+        throw new Error(res?.message || "Request failed");
+      }
 
       showToast("success", isEditMode ? "Card updated!" : "Card added!");
       // Scroll to this AddCard section after submit
