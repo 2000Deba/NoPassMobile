@@ -1,3 +1,10 @@
+[![Platform](https://img.shields.io/badge/platform-Android-green)](https://developer.android.com)
+[![Framework](https://img.shields.io/badge/framework-React%20Native-blue)](https://reactnative.dev)
+[![Expo](https://img.shields.io/badge/built%20with-Expo-000000)](https://expo.dev)
+[![License](https://img.shields.io/badge/license-Source--Available-orange)](./LICENSE)
+![Repo Size](https://img.shields.io/github/repo-size/2000Deba/NoPassMobile)
+![Last Commit](https://img.shields.io/github/last-commit/2000Deba/NoPassMobile)
+
 # 🔐 NoPassMobile
 
 NoPassMobile is the official **Android mobile application** for the **NoPass Password Manager** project.  
@@ -46,8 +53,7 @@ It allows users to securely **store, view, and manage their passwords and credit
 
 This application is developed with security best practices in mind.
 
-During installation, the APK is scanned by **Google Play Protect**.
-No harmful behavior was reported during the scan.
+During installation, the APK is scanned by **Google Play Protect**, and no harmful behavior was reported.
 
 <div align="center">
   <p><strong>Google Play Protect – Installation Scan Result</strong></p>
@@ -100,7 +106,7 @@ git clone https://github.com/2000Deba/NoPassMobile.git
 cd NoPassMobile
 ```
 ### 2️⃣ Install dependencies
-```
+```bash
 npm install
 ```
 ### 3️⃣ Start the development server
@@ -143,6 +149,20 @@ eas build -p android
 - GitHub: [@2000Deba](https://github.com/2000Deba)
 - Live Demo: [NoPass](https://nopass-deba.vercel.app/)
 - Download: [Latest APK (GitHub Releases)](https://github.com/2000Deba/NoPassMobile/releases)
+
+---
+
+## 📜 License
+
+This project is **source-available** under a custom license.
+
+You are allowed to view, fork, and contribute to this repository for learning
+and contribution purposes only.
+
+❌ Reuse, redistribution, rebranding, modification, or commercial use is **not allowed**
+without explicit permission from the author.
+
+See the [LICENSE](./LICENSE) file for full details.
 
 ---
 
