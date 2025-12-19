@@ -27,7 +27,7 @@ It allows users to securely **store, view, and manage their passwords and credit
   <img src="./screenshots/login.png" width="45%" />
 </p>
 <p align="center">
-  <b>Home Screen</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Home Screen</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <b>Login Screen</b>
 </p>
 
@@ -36,7 +36,7 @@ It allows users to securely **store, view, and manage their passwords and credit
   <img src="./screenshots/dark-mode.png" width="45%" />
 </p>
 <p align="center">
-  <b>Dashboard</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Dashboard</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <b>Dark Mode</b>
 </p>
 
@@ -44,12 +44,13 @@ It allows users to securely **store, view, and manage their passwords and credit
 
 ## 🔐 Security & Safety
 
-This application is developed with security best practices in mind and is scanned by **Google Play Protect**, which reports no harmful behavior during installation.
+This application is developed with security best practices in mind.
 
-At the time of installation, the APK is scanned by **Google Play Protect**, which reports no harmful behavior.
+During installation, the APK is scanned by **Google Play Protect**.
+No harmful behavior was reported during the scan.
 
 <div align="center">
-  <p><strong>Google Play Protect Scan Result</strong></p>
+  <p><strong>Google Play Protect – Installation Scan Result</strong></p>
   <img 
     src="./screenshots/google-play-protect-scan.png"
     height="500"
@@ -57,7 +58,8 @@ At the time of installation, the APK is scanned by **Google Play Protect**, whic
   />
 </div>
 
-> The APK is scanned by Google Play Protect, which reports no harmful behavior during installation.
+> This application is not distributed via the Google Play Store.
+Google Play Protect scanning occurs automatically during APK installation on supported Android devices.
 
 ### Security Notes
 
@@ -140,7 +142,7 @@ eas build -p android
 
 - GitHub: [@2000Deba](https://github.com/2000Deba)
 - Live Demo: [NoPass](https://nopass-deba.vercel.app/)
-- Download: [NoPassMobile App](https://github.com/2000Deba/NoPassMobile/releases/download/v1.0.1/NoPassMobile-v1.0.1.apk)
+- Download: [Latest APK (GitHub Releases)](https://github.com/2000Deba/NoPassMobile/releases)
 
 ---
 
