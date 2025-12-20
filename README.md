@@ -64,8 +64,8 @@ During installation, the APK is scanned by **Google Play Protect**, and no harmf
   />
 </div>
 
-> This application is not distributed via the Google Play Store.
-Google Play Protect scanning occurs automatically during APK installation on supported Android devices.
+> The APKs are distributed via GitHub Releases (Microsoft-owned platform).  
+> During installation, the APK is automatically scanned by **Google Play Protect** on supported Android devices.
 
 ### Security Notes
 
