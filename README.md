@@ -7,8 +7,13 @@
 
 # 🔐 NoPassMobile
 
+> ⚠️ **IMPORTANT NOTICE**  
+> This project is **source-available**, NOT open-source.  
+> Deployment, redistribution, rebranding, or reuse is strictly prohibited  
+> without explicit written permission from the author.
+
 NoPassMobile is the official **Android mobile application** for the **NoPass Password Manager** project.  
-It allows users to securely **store, view, and manage their passwords and credit or debit card details** using modern security best practices.
+It allows users to securely **store, view, and manage their passwords and credit/debit card details** using modern security best practices.
 
 > 🚀 This repository contains the complete source code of the NoPassMobile app.  
 > The latest production APK (v1.0.1 – Stable Release) can be downloaded from the **GitHub Releases** section.
@@ -100,6 +105,9 @@ During installation, the APK is scanned by **Google Play Protect**, and no harmf
 
 ## 📦 Installation (Development)
 
+> ⚠️ This section is provided **only for learning and contribution purposes**.  
+> Deployment or production use is **not allowed**.
+
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/2000Deba/NoPassMobile.git
@@ -131,6 +139,23 @@ eas build -p android
 
 ---
 
+## 🔐 Usage Policy
+
+- Viewing and learning: ✅ Allowed
+
+- Contributions (PRs): ⚠️ Allowed (all contributions become property of the author).
+
+- By submitting a pull request, you agree that your contribution
+becomes part of the project and is subject to the same license terms.
+
+- Forking: ⚠️ Allowed by GitHub, not permission to reuse
+
+- Deployment / Rebranding / Commercial use: ❌ Not allowed
+
+All forked copies remain bound to the same license terms.
+
+---
+
 ### 🚀 Releases
 
 ➡️ Download the **latest APK** from the **Releases** section of this repository.
@@ -147,6 +172,7 @@ eas build -p android
 **👤 Debasish Seal**
 
 - GitHub: [@2000Deba](https://github.com/2000Deba)
+- Portfolio: [Portfolio](https://debasishseal.vercel.app/)
 - Live Demo: [NoPass](https://nopass-deba.vercel.app/)
 - Download: [Latest APK (GitHub Releases)](https://github.com/2000Deba/NoPassMobile/releases)
 
@@ -154,15 +180,19 @@ eas build -p android
 
 ## 📜 License
 
-This project is **source-available** under a custom license.
+This project is **source-available under a custom license**.
+It is **NOT open-source**.
 
-You are allowed to view, fork, and contribute to this repository for learning
+You are allowed to view and contribute to this repository for learning
 and contribution purposes only.
 
 ❌ Reuse, redistribution, rebranding, modification, or commercial use is **not allowed**
 without explicit permission from the author.
 
-See the [LICENSE](./LICENSE) file for full details.
+Modification is allowed only for local learning or contribution purposes.
+Modified versions may NOT be deployed, redistributed, or published.
+
+See the [LICENSE](./LICENSE) file for full legal terms and details.
 
 ---
 
